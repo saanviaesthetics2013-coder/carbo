@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Saanvi</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-<nav>
-  <div class="logo">Saanvi</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
-  </ul>
-</nav>
 
-<section class="contact">
-  <h1>Contact Me</h1>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-<script src="scripts/script.js"></script>
+  <header class="navbar">
+    <div class="nav-logo">Saanvi<span>.</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="tools.html">Tools</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <h1 class="reveal">Contact Me</h1>
+    <p class="reveal">Send me a message anytime.</p>
+  </section>
+
+  <section class="section">
+    <form class="contact-form reveal">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
