@@ -1,94 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tools</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools | Saanvi</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-<nav>
-  <div class="logo">Saanvi</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="tools.html" class="active">Tools</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
 
-<section id="tools">
-  <h1>Useful Tools</h1>
-  <div class="tool-grid">
-    <div class="tool-card">
-      <h3>Calculator</h3>
-      <p>Advanced calculations online.</p>
-      <a href="https://www.desmos.com/calculator" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>ChatGPT</h3>
-      <p>Ask AI anything instantly.</p>
-      <a href="https://chat.openai.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Canva</h3>
-      <p>Create stunning graphics.</p>
-      <a href="https://www.canva.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Google Translate</h3>
-      <p>Translate text and documents easily.</p>
-      <a href="https://translate.google.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Pomodoro Timer</h3>
-      <p>Boost productivity with a timer.</p>
-      <a href="https://pomofocus.io/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Weather App</h3>
-      <p>Check real-time weather.</p>
-      <a href="https://weather.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Currency Converter</h3>
-      <p>Convert currencies instantly.</p>
-      <a href="https://www.xe.com/currencyconverter/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>AI Image Generator</h3>
-      <p>Create AI-generated images.</p>
-      <a href="https://www.midjourney.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Markdown Editor</h3>
-      <p>Edit markdown and preview live.</p>
-      <a href="https://stackedit.io/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Notepad Online</h3>
-      <p>Write code or notes online.</p>
-      <a href="https://anotepad.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>CodePen</h3>
-      <p>Test HTML, CSS, JS code snippets.</p>
-      <a href="https://codepen.io/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>GitHub</h3>
-      <p>Host your projects online.</p>
-      <a href="https://github.com/" target="_blank">Open</a>
-    </div>
-    <div class="tool-card">
-      <h3>Figma</h3>
-      <p>Design UI/UX mockups online.</p>
-      <a href="https://www.figma.com/" target="_blank">Open</a>
-    </div>
-  </div>
-</section>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-<script src="scripts/script.js"></script>
+  <header class="navbar">
+    <div class="nav-logo">Saanvi<span>.</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <h1 class="reveal">Useful Tools</h1>
+    <p class="reveal">Advanced futuristic tools that you can use instantly.</p>
+  </section>
+
+  <section class="section">
+    <div class="grid-3">
+
+      <div class="glass-card reveal"><h3>🧮 Calculator</h3><p>Advanced online calculator</p><a class="btn primary" href="https://www.desmos.com/calculator" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🤖 ChatGPT</h3><p>AI assistant tool</p><a class="btn primary" href="https://chat.openai.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🎨 Canva</h3><p>Graphic design platform</p><a class="btn primary" href="https://www.canva.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🌍 Google Translate</h3><p>Translate languages instantly</p><a class="btn primary" href="https://translate.google.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>⏳ Pomodoro Timer</h3><p>Study timer for productivity</p><a class="btn primary" href="https://pomofocus.io/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>☁ Weather</h3><p>Real-time weather forecast</p><a class="btn primary" href="https://weather.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>💱 Currency Converter</h3><p>Convert money worldwide</p><a class="btn primary" href="https://www.xe.com/currencyconverter/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🖼 AI Image Tool</h3><p>Generate AI images</p><a class="btn primary" href="https://www.midjourney.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>📝 Markdown Editor</h3><p>Write markdown with preview</p><a class="btn primary" href="https://stackedit.io/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>💻 CodePen</h3><p>Test HTML/CSS/JS online</p><a class="btn primary" href="https://codepen.io/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🧠 Figma</h3><p>UI/UX designing tool</p><a class="btn primary" href="https://www.figma.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>📌 GitHub</h3><p>Host your projects online</p><a class="btn primary" href="https://github.com/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>📚 Wikipedia</h3><p>Learn anything instantly</p><a class="btn primary" href="https://wikipedia.org/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>📷 Remove Background</h3><p>Remove image background</p><a class="btn primary" href="https://remove.bg/" target="_blank">Open</a></div>
+      <div class="glass-card reveal"><h3>🔍 Google Search</h3><p>Search the internet fast</p><a class="btn primary" href="https://google.com/" target="_blank">Open</a></div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
