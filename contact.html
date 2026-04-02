@@ -3,46 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Saanvi</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <title>TechNova 📩 | Contact</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <div class="bg-grid"></div>
-  <div class="bg-glow"></div>
-
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="nav-logo">Saanvi<span>.</span></div>
+    <div class="container nav-inner">
+      <div class="logo">
+        ⚡ <span>TechNova</span>
+      </div>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="tools.html">Tools</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="posts.html">📰 Posts</a>
+        <a href="tools.html">🧰 Tools</a>
+        <a href="about.html">👤 About</a>
+        <a href="contact.html">📩 Contact</a>
+      </nav>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="tools.html">🧰 Tools</a>
+      </div>
+    </div>
   </header>
 
-  <section class="page-hero">
-    <h1 class="reveal">Contact Me</h1>
-    <p class="reveal">Send me a message anytime.</p>
-  </section>
-
   <section class="section">
-    <form class="contact-form reveal">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button class="btn primary" type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2 class="section-title reveal">📩 Contact <span>TechNova</span></h2>
+
+      <div class="card reveal">
+        <h3>📬 Send Message</h3>
+        <p style="margin-bottom:12px;">
+          GitHub Pages cannot directly send emails, but you can copy your message and send it manually.
+        </p>
+
+        <input class="input" id="name" placeholder="👤 Your Name" />
+        <br><br>
+        <input class="input" id="email" placeholder="📧 Your Email" />
+        <br><br>
+        <textarea class="input" id="message" placeholder="💬 Your Message" style="min-height:120px;"></textarea>
+        <br><br>
+
+        <button class="btn btn-primary" onclick="copyMessage()">📋 Copy Message</button>
+        <p id="status" style="margin-top:12px; color:var(--muted);"></p>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px;">
+        <h3>🔗 Social Links</h3>
+        <p>You can add your Instagram / YouTube / LinkedIn links here later.</p>
+        <div class="meta" style="margin-top:10px;">
+          <span class="tag">📷 Instagram</span>
+          <span class="tag">▶ YouTube</span>
+          <span class="tag">💼 LinkedIn</span>
+        </div>
+      </div>
+
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
+    <div class="container">
+      <p>© 2026 <strong>TechNova</strong> ⚡ | Stay connected.</p>
+    </div>
   </footer>
 
-  <script src="scripts/script.js"></script>
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTopBtn">
+    <button class="btn btn-primary">⬆ Top</button>
+  </div>
+
+  <script src="assets/script.js"></script>
+
+  <script>
+    function copyMessage(){
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const fullText =
+`TechNova Contact Message
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
+      navigator.clipboard.writeText(fullText);
+      document.getElementById("status").innerText = "✅ Message copied! Now paste it in Gmail/WhatsApp.";
+    }
+  </script>
+
 </body>
 </html>
