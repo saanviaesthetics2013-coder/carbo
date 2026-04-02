@@ -1,54 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saanvi Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova ⚡ | Futuristic Cyber + AI Blog</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Saanvi<span>.</span></div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        ⚡ <span>TechNova</span>
+      </div>
 
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="tools.html">Tools</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="posts.html">📰 Posts</a>
+        <a href="tools.html">🧰 Tools</a>
+        <a href="about.html">👤 About</a>
+        <a href="contact.html">📩 Contact</a>
+      </nav>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
-</header>
-
-<section class="hero">
-  <div class="hero-content reveal">
-    <p class="tag">🚀 Futuristic Portfolio</p>
-    <h1>Modern <span>Blue-Beige</span> Theme Portfolio</h1>
-    <p class="subtext">Explore my tools, projects, and futuristic web apps.</p>
-
-    <div class="hero-buttons">
-      <a class="btn primary" href="projects.html">View Projects</a>
-      <a class="btn secondary" href="tools.html">Explore Tools</a>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="posts.html">🚀 Explore</a>
+      </div>
     </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <h1>Future of <span>Cybersecurity</span>, AI & Robotics.</h1>
+        <p>
+          Welcome to <b>TechNova</b> — a futuristic blogging platform where technology meets reality.
+          Learn cybersecurity, explore AI advancements, and understand the rise of intelligent machines.
+        </p>
+
+        <div class="hero-badges">
+          <div class="badge">🔒 Cybersecurity</div>
+          <div class="badge">🧠 Artificial Intelligence</div>
+          <div class="badge">🤖 Robotics</div>
+          <div class="badge">🛰️ Future Tech</div>
+        </div>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="posts.html" class="btn btn-primary">📰 Read Articles</a>
+          <a href="tools.html" class="btn btn-ghost">🧰 Use Tools</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <h3>⚡ Featured Intelligence</h3>
+        <div class="mini">
+          <div class="mini-item">
+            <strong>🔐 Cyber Attack Trends</strong>
+            <p>Learn how hackers operate and how to protect yourself.</p>
+          </div>
+          <div class="mini-item">
+            <strong>🧠 AI Evolution</strong>
+            <p>Explore AI models, automation, and future predictions.</p>
+          </div>
+          <div class="mini-item">
+            <strong>🤖 Robotics Revolution</strong>
+            <p>Discover how robots are learning to think and act.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LATEST POSTS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">📰 Latest <span>Articles</span></h2>
+      <div class="grid-3" id="homePosts"></div>
+    </div>
+  </section>
+
+  <!-- WHY TECHNOVA -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">🌌 Why <span>TechNova</span>?</h2>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <h3>🔒 Security First</h3>
+          <p>
+            Real cybersecurity concepts explained in a clear way — from phishing to ethical hacking.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>🧠 AI Knowledge</h3>
+          <p>
+            Learn how artificial intelligence works, what’s coming next, and how it affects your life.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>🤖 Robotics & Future</h3>
+          <p>
+            Explore robots, automation, sensors, and how machines are becoming smarter every year.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>TechNova</strong> ⚡ | Built for the future.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTopBtn">
+    <button class="btn btn-primary">⬆ Top</button>
   </div>
 
-  <div class="hero-card reveal">
-    <h3>✨ Skills</h3>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>Animations & UI Design</li>
-      <li>GitHub Hosting</li>
-      <li>Modern Web Projects</li>
-    </ul>
-  </div>
-</section>
+  <script src="assets/posts.js"></script>
+  <script src="assets/script.js"></script>
 
-<footer class="footer">
-  <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
-</footer>
+  <script>
+    // Render 3 latest posts on homepage
+    const homePosts = document.getElementById("homePosts");
+    if(homePosts){
+      POSTS.slice(0,3).forEach(p=>{
+        const div = document.createElement("div");
+        div.className="card reveal";
+        div.innerHTML = `
+          <h3>${p.title}</h3>
+          <p>${p.desc}</p>
+          <div class="meta">
+            <span class="tag">${p.category}</span>
+            <span class="tag">📅 ${p.date}</span>
+            <span class="tag">⏳ ${p.readTime}</span>
+          </div>
+          <div style="margin-top:14px;">
+            <a class="btn btn-primary" href="${p.file}">📖 Read</a>
+          </div>
+        `;
+        homePosts.appendChild(div);
+      });
 
-<script src="scripts/script.js"></script>
+      revealOnScroll();
+    }
+  </script>
+
 </body>
 </html>
