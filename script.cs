@@ -1,10 +1,25 @@
-// Smooth scroll for navbar links
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        if (this.hash !== '') {
-            e.preventDefault();
-            const target = document.querySelector(this.hash);
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+// Mobile Menu
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
 });
+
+// Scroll Reveal Animation
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 120;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
