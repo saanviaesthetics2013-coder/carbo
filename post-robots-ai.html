@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robots + AI | TechNova</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        ⚡ <span>TechNova</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="posts.html">📰 Posts</a>
+        <a href="tools.html">🧰 Tools</a>
+        <a href="about.html">👤 About</a>
+        <a href="contact.html">📩 Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="posts.html">📰 Back</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container post-layout">
+
+    <!-- MAIN POST -->
+    <article class="post-article reveal">
+      <h1>🤖 Robots + AI: The Rise of Smart Machines</h1>
+
+      <div class="post-info">
+        <span>👤 TechNova</span>
+        <span>📅 2026-04-02</span>
+        <span>⏳ 5 min read</span>
+        <span class="tag">Robotics</span>
+      </div>
+
+      <p>
+        Robots are no longer just machines that follow commands. With Artificial Intelligence,
+        robots are becoming smarter and more independent.
+      </p>
+
+      <h2>🧠 1. How Robots Become Intelligent</h2>
+      <p>
+        Robots use sensors to collect data from the environment. AI processes that data and decides
+        what action should be taken.
+      </p>
+
+      <h2>📡 2. Sensors: The Eyes and Ears of Robots</h2>
+      <p>
+        Common robot sensors include:
+      </p>
+      <p>
+        👁️ Camera sensors (vision) <br>
+        🎤 Microphones (sound detection) <br>
+        🌡️ Temperature sensors <br>
+        📍 GPS sensors <br>
+        🤚 Touch sensors
+      </p>
+
+      <h2>⚡ 3. Robots in Real Life</h2>
+      <p>
+        Robots are already used in:
+      </p>
+      <p>
+        🏭 Factories (automation) <br>
+        🚗 Self-driving cars <br>
+        🏥 Hospitals (surgery assistance) <br>
+        🏠 Smart homes (cleaning robots) <br>
+        🚀 Space exploration
+      </p>
+
+      <h2>🌌 4. Future of Robotics</h2>
+      <p>
+        In the future, robots may become personal assistants. They may help elderly people,
+        manage smart cities, and perform dangerous jobs like disaster rescue.
+      </p>
+
+      <h2>🛡️ 5. Risks of Robots + AI</h2>
+      <p>
+        If robots become too intelligent, cybersecurity will become critical. Hackers could hack robots
+        and use them for harmful purposes. This is why AI safety is a serious topic.
+      </p>
+
+      <h2>🚀 Final Thoughts</h2>
+      <p>
+        Robots powered by AI will be one of the biggest inventions of human history.
+        The future is not coming — it is already here.
+      </p>
+
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn btn-ghost" data-like="robots-ai">🤍 Like</button>
+        <button class="btn btn-ghost" data-bookmark="robots-ai">📌 Save</button>
+        <button class="btn btn-primary" onclick="sharePost()">📤 Share</button>
+      </div>
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar reveal">
+      <div class="side-card">
+        <h3>🤖 Robotics Tip</h3>
+        <p style="color:var(--muted); line-height:1.6;">
+          Robotics is not only hardware. AI is the brain, sensors are the eyes, and code is the language.
+        </p>
+      </div>
+
+      <div class="side-card">
+        <h3>🔥 Recommended</h3>
+        <a href="post-cybersecurity-basics.html">🔒 Cybersecurity Basics</a>
+        <a href="post-ai-future.html">🧠 AI in the Future</a>
+      </div>
+
+      <div class="side-card">
+        <h3>🧰 Useful Tool</h3>
+        <a href="tools.html">🔢 Text to Binary</a>
+      </div>
+    </aside>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>TechNova</strong> ⚡ | Robots are the future workforce.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTopBtn">
+    <button class="btn btn-primary">⬆ Top</button>
+  </div>
+
+  <script src="assets/script.js"></script>
+  <script>
+    initPostButtons("robots-ai");
+  </script>
+
+</body>
+</html>
