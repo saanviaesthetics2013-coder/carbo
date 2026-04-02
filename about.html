@@ -3,64 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Saanvi</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <title>TechNova 👤 | About</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <div class="bg-grid"></div>
-  <div class="bg-glow"></div>
-
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="nav-logo">Saanvi<span>.</span></div>
+    <div class="container nav-inner">
+      <div class="logo">
+        ⚡ <span>TechNova</span>
+      </div>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="tools.html">Tools</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="posts.html">📰 Posts</a>
+        <a href="tools.html">🧰 Tools</a>
+        <a href="about.html">👤 About</a>
+        <a href="contact.html">📩 Contact</a>
+      </nav>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="posts.html">📰 Posts</a>
+      </div>
+    </div>
   </header>
 
-  <section class="page-hero">
-    <h1 class="reveal">About Me</h1>
-    <p class="reveal">A quick introduction about my passion and skills.</p>
-  </section>
-
   <section class="section">
-    <div class="about-box reveal">
-      <h2>👋 Hi, I’m Saanvi</h2>
-      <p>
-        I love building futuristic websites and interactive tools.
-        I focus on clean UI, smooth animations, and professional layouts.
-      </p>
+    <div class="container">
+      <h2 class="section-title reveal">👤 About <span>TechNova</span></h2>
 
-      <div class="about-stats">
-        <div class="stat-card">
-          <h3>20+</h3>
-          <p>Website Sections Built</p>
+      <div class="card reveal">
+        <h3>⚡ What is TechNova?</h3>
+        <p>
+          TechNova is a futuristic blog platform focused on <b>Cybersecurity</b>, <b>Artificial Intelligence</b>,
+          <b>Robotics</b> and the future of technology.
+        </p>
+        <p>
+          The mission of TechNova is simple: deliver real tech knowledge in an aesthetic and modern way.
+          Every post is written with clarity so beginners can also understand.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-top:18px;">
+        <div class="card reveal">
+          <h3>🔒 Cybersecurity</h3>
+          <p>
+            Learn hacking concepts, attack methods, and defense strategies. Knowledge = protection.
+          </p>
         </div>
 
-        <div class="stat-card">
-          <h3>15+</h3>
-          <p>Tools Added</p>
+        <div class="card reveal">
+          <h3>🧠 Artificial Intelligence</h3>
+          <p>
+            Understand AI models, machine learning, automation and future risks + benefits.
+          </p>
         </div>
 
-        <div class="stat-card">
-          <h3>100%</h3>
-          <p>Modern UI Design</p>
+        <div class="card reveal">
+          <h3>🤖 Robotics</h3>
+          <p>
+            Explore intelligent machines, robotics engineering, automation and how robots will shape the world.
+          </p>
         </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px;">
+        <h3>🚀 Future Plan</h3>
+        <p>
+          TechNova will keep adding advanced posts, futuristic tools, and interactive content.
+          This blog is designed like a real modern platform, even on GitHub Pages.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
+    <div class="container">
+      <p>© 2026 <strong>TechNova</strong> ⚡ | Powered by curiosity.</p>
+    </div>
   </footer>
 
-  <script src="scripts/script.js"></script>
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTopBtn">
+    <button class="btn btn-primary">⬆ Top</button>
+  </div>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
