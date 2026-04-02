@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me</title>
-<link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Saanvi</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-<nav>
-  <div class="logo">Saanvi</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
 
-<section class="about">
-  <canvas id="about-particles"></canvas>
-  <h1>About Me</h1>
-  <div class="about-content">
-    <p>Hi! I’m Saanvi, passionate about building interactive and futuristic websites. I specialize in HTML, CSS, JavaScript, and UI/UX design.</p>
-    <p>My goal is to make websites that are visually stunning, functional, and futuristic.</p>
-  </div>
-</section>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-<script src="scripts/particles.js"></script>
-<script src="scripts/script.js"></script>
+  <header class="navbar">
+    <div class="nav-logo">Saanvi<span>.</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="tools.html">Tools</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <h1 class="reveal">About Me</h1>
+    <p class="reveal">A quick introduction about my passion and skills.</p>
+  </section>
+
+  <section class="section">
+    <div class="about-box reveal">
+      <h2>👋 Hi, I’m Saanvi</h2>
+      <p>
+        I love building futuristic websites and interactive tools.
+        I focus on clean UI, smooth animations, and professional layouts.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3>20+</h3>
+          <p>Website Sections Built</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>15+</h3>
+          <p>Tools Added</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>100%</h3>
+          <p>Modern UI Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Saanvi Portfolio | Built with ❤️</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
