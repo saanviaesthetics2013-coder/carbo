@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova 📰 | Posts</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        ⚡ <span>TechNova</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="posts.html">📰 Posts</a>
+        <a href="tools.html">🧰 Tools</a>
+        <a href="about.html">👤 About</a>
+        <a href="contact.html">📩 Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="tools.html">🧰 Tools</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">📰 TechNova <span>Posts</span></h2>
+      <p class="reveal" style="color:rgba(234,246,255,0.75); margin-bottom:16px; line-height:1.7;">
+        Search futuristic blogs, filter by categories, and explore cybersecurity, AI and robotics articles.
+      </p>
+
+      <div class="search-box reveal">
+        <input id="searchInput" class="input" placeholder="🔍 Search posts by title, tags, keyword..." />
+        <select id="categoryFilter" class="select">
+          <option value="All">All Categories</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="Artificial Intelligence">Artificial Intelligence</option>
+          <option value="Robotics">Robotics</option>
+        </select>
+      </div>
+
+      <div class="grid-3" id="postList"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>TechNova</strong> ⚡ | Knowledge is the best firewall.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTopBtn">
+    <button class="btn btn-primary">⬆ Top</button>
+  </div>
+
+  <script src="assets/posts.js"></script>
+  <script src="assets/script.js"></script>
+
+  <script>
+    initSearchFilter("searchInput", "categoryFilter", "postList");
+  </script>
+
+</body>
+</html>
